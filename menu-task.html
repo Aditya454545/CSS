@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Dropdown Menu with More Data</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        li {
+            position: relative;
+            padding: 15px 20px;
+            cursor: pointer;
+            color: #fff;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #333;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+            z-index: 1;
+            min-width: 200px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            display: block;
+            padding: 12px 16px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #555;
+        }
+
+        /* Additional styling for the navigation links */
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Additional styling for more data in dropdown */
+        .big-dropdown {
+            min-width: 300px;
+        }
+
+        .big-dropdown-content {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li class="dropdown">
+                <span>Services</span>
+                <div class="dropdown-content big-dropdown">
+                    <div class="big-dropdown-content">
+                        <h3>Web Design Services</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <ul>
+                            <li>Responsive Web Design</li>
+                            <li>UI/UX Design</li>
+                            <li>E-commerce Solutions</li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="dropdown">
+                <span>Portfolio</span>
+                <div class="dropdown-content">
+                    <a href="#">Project 1</a>
+                    <a href="#">Project 2</a>
+                    <a href="#">Project 3</a>
+                </div>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>
