@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="menu">
+        <div class="item">Home</div>
+        <div class="item">About</div>
+        <div class="item">Gallery</div>
+        <div class="item">Contact</div>
+        <div class="item">Feedback</div>
+        <div class="item">Login</div>
+    </div>
+    <div class="bgimage">
+        <div class="box">
+            <header class="h1">Create Account</header>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur laborum nisi quo esse eligendi
+                consequatur ullam facilis in quasi aliquid, molestias non ipsam tempora dignissimos recusandae suscipit
+                quam aperiam architecto!</p>
+        </div>
+        <div class="box form2">
+            <div class="box3">
+                <header class="h2">Create Account</header>
+                <div class="form"> <input type="text" placeholder="First Name"></div>
+                <div class="form"> <input type="text" placeholder="Last Name"></div>
+                <div class="form"> <input type="text" placeholder="Gmail"></div>
+                <div class="form"> <input type="text" placeholder="Password"></div>
+                <div class="form"> <input type="text" placeholder="Confirm Password"></div>
+                <div class="form"><button>Summit</button></div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0px;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            background-color: black;
+
+        }
+
+        .item {
+            color: white;
+            display: inline-block;
+            width: 100%;
+            margin: 10px 30px;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .bgimage {
+            height: 600px;
+            background-image: url(images/background.jpg);
+            background-size: cover;
+            display: flex;
+            align-items: center;
+        }
+
+        .box {
+            width: 100%;
+            padding: 20px;
+        }
+
+        .h1 {
+            font-size: 60px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: chartreuse;
+        }
+
+        p {
+            color: white;
+        }
+
+        .h2 {
+            text-align: center;
+            font-size: 30px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: greenyellow;
+        }
+
+        .form {
+            margin-left: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input {
+            margin: 10px;
+            height: 40px;
+            width: 300px;
+        }
+
+        button {
+            height: 30px;
+            width: 80px;
+
+        }
+
+        .form2 {
+            margin: 10px;
+            display: flex;
+            justify-content: end;
+        }
+
+        
+    </style>
+</body>
+
+</html>

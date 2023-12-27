@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="menu">
+        <div class="item">Home</div>
+        <div class="item">About</div>
+        <div class="item">Gallery</div>
+        <div class="item">Contact</div>
+        <div class="item">Feedback</div>
+        <div class="item">Login</div>
+    </div>
+    <div class="image">
+
+        <div class="box">
+            <h1>CREATE ACCOUNT</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, suscipit pariatur. Fuga consectetur quo ab
+                repellendus. Iste ducimus quos recusandae. Harum, laboriosam ipsum! Placeat reiciendis nam, accusamus
+                velit cum quae.</p>
+        </div>
+        <div class="box box2">
+            <div class="box3">
+                <h2> Create Account </h2>
+                <input type="text" class="form" placeholder="First Name"><br>
+                <input type="text" class="form" placeholder="Last Name"><br>
+                <input type="text" class="form" placeholder="Gmail"><br>
+                <input type="text" class="form" placeholder="Password"><br>
+                <input type="text" class="form" placeholder="Confirm Password"><br>
+                <button>Summit</button>
+            </div>
+        </div>
+        <img src="images/background.jpg" alt="" class="img">
+    </div>
+
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0px;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            background-color: black;
+
+        }
+
+        .item {
+            color: white;
+            display: inline-block;
+            width: 100%;
+            margin: 10px 30px;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .image {
+            display: flex;
+            height: 600px;
+            align-items: center;
+
+        }
+
+        .img {
+            height: 600px;
+            width: 100%;
+            position: absolute;
+            z-index: -10;
+        }
+
+        .box {
+            border: 2px solid red;
+            width: 50%;
+        }
+
+        .form {
+            height: 30px;
+            width: 300px;
+            margin: 10px;
+        }
+
+        button {
+            width: 60px;
+        }
+
+        .h1 {
+            font-size: 30px;
+        }
+
+        h2 {
+            color: aquamarine;
+        }
+
+        .box2 {
+            border: 2px solid red;
+            display: flex;
+            justify-content: end;
+        }
+
+        .box3 {
+            border: 2px solid red;
+            margin: 20px;
+            text-align: center;
+
+        }
+    </style>
+</body>
+
+</html>
