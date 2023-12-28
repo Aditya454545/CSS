@@ -15,13 +15,21 @@
             <div class="item"><a href="portfolio.html">HOME</a></div>
             <div class="item"><a href="portfolio-about.html">ABOUT</a></div>
             <div class="item"><a href="">GALLERY</a>
-                <div class="sub-item"><a href=""></a></div>
-                <div class="sub-item"><a href=""></a></div>
-                <div class="sub-item"><a href=""></a></div>
-                <div class="sub-item"><a href=""></a></div>
-                <div class="sub-item"><a href=""></a></div>
-                <div class="sub-item"><a href=""></a></div>
-                <div class="sub-item"><a href=""></a></div>
+                <div class="sub-menu">
+                    <div class="sub-item"><a href="portfolio-sub-menu-nature.html">Nature</a></div>
+                    <div class="sub-item"><a href="portfolio-sub-menu-people .html">People</a></div>
+                    <div class="sub-item"><a href="portfolio-sub-menu-Architecture.html">Architecture</a></div>
+                    <div class="sub-item"><a href="portfolio-sub-menu-animals.html">Animals</a></div>
+                    <div class="sub-item"><a href="portfolio-sub-menu-sports.html">Sports</a></div>
+                    <div class="sub-item"><a href="portfolio-sub-menu-travel.html">Travel</a></div>
+                    <div class="sub-item"><a href="">Sub Menu</a>
+                        <div class="sub-menu2">
+                            <div class="sub-item">Sub-menu1</div>
+                            <div class="sub-item">Sub-menu2</div>
+                            <div class="sub-item">Sub-menu3</div>
+                        </div>
+                    </div>
+                </div>    
             </div>
             <div class="item"><a href="portfolio-services.html">SERVICES</a></div>
             <div class="item"><a href="portfolio-contact.html">CONTACT</a></div>
@@ -94,6 +102,32 @@
             justify-content: space-between;
             position: fixed;
             width: 100%;
+        }
+
+        .sub-menu {
+            color: white;
+            position: absolute;
+            top: 50px;
+            background-color: darkgray;
+            font-size: 20px;
+            padding: 10px;
+            display: none;
+        }
+
+        .sub-item {
+            padding: 10px;
+            color: black;
+        }
+
+        .sub-menu2{
+            color: black;
+            position: absolute;
+            width: 200px;
+            background-color: gray;
+            right: 100%;
+        }
+        .item:hover .sub-menu {
+            display: block;
         }
 
         .txt {
